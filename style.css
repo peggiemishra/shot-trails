@@ -310,7 +310,7 @@ body{
 
     margin-bottom: 80px;
 
-    background: #BFCDC2; /* Updated to your custom Sage Green (#BFCDC2) */
+    background: #BFCDC2; /* Custom Sage Green */
 
     padding: 50px 60px;
 
@@ -326,7 +326,7 @@ body{
 
     line-height: 1.8;
 
-    color: #1b261f; /* Adjusted color for sharp reading contrast on sage background */
+    color: #1b261f; 
 
 }
 
@@ -596,25 +596,29 @@ body{
 
 .verified-card{
 
-    min-width:360px;
+    min-width:300px;
+    width:300px;
+    aspect-ratio: 1 / 1; /* Makes the card perfectly square */
 
-    background:#fff;
-
-    border-radius:22px;
+    background:#8ca19e; /* Custom Slate-Sage background */
 
     padding:28px;
 
     text-decoration:none;
 
-    color:inherit;
+    color:#ffffff; /* White text for great readability */
 
     box-shadow:0 12px 35px rgba(0,0,0,.08);
 
-    border:1px solid #ececec;
+    border:none; /* Removed old border */
 
     transition:.3s;
 
     scroll-snap-align:start;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between; /* Perfect item spacing in square format */
 
 }
 
@@ -622,7 +626,7 @@ body{
 
     transform:translateY(-6px);
 
-    box-shadow:0 20px 45px rgba(0,0,0,.12);
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
 
 }
 
@@ -634,7 +638,7 @@ body{
 
     letter-spacing:1px;
 
-    color:#777;
+    color:#e5edea; /* Lighter color for clean label layout */
 
     margin-bottom:14px;
 
@@ -642,21 +646,23 @@ body{
 
 .verified-title{
 
-    font-size:20px;
+    font-size:18px;
 
     font-weight:600;
 
     line-height:1.5;
 
-    margin-bottom:30px;
+    margin-bottom:auto;
 
 }
 
 .verified-link{
 
-    color:var(--green);
+    color:#ffffff;
 
     font-weight:600;
+
+    margin-top:20px;
 
 }
 
@@ -686,7 +692,8 @@ body{
 
     .verified-card{
 
-        min-width:280px;
+        min-width:260px;
+        width:260px;
 
     }
 
