@@ -310,13 +310,13 @@ body{
 
     margin-bottom: 80px;
 
-    background: #f3f7f2; /* Soft Sage Tint */
+    background: #BFCDC2; /* Updated to your custom Sage Green (#BFCDC2) */
 
     padding: 50px 60px;
 
     border-radius: 28px;
 
-    box-shadow: 0 15px 45px rgba(0,0,0,.03);
+    box-shadow: 0 15px 45px rgba(0,0,0,.05);
 
     font-family: 'Cormorant Garamond', serif;
 
@@ -326,7 +326,7 @@ body{
 
     line-height: 1.8;
 
-    color: #2b3a2f;
+    color: #1b261f; /* Adjusted color for sharp reading contrast on sage background */
 
 }
 
@@ -356,7 +356,7 @@ body{
 
     font-size: 24px;
 
-    color: #3d4a40;
+    color: #2b362f;
 
 }
 
