@@ -1,4 +1,3 @@
-
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
@@ -26,7 +25,7 @@ fetch("data.json")
               </div>
 
               <div class="verified-link">
-                  Open Article →
+                  Check Out →
               </div>
 
           </a>
