@@ -1,23 +1,21 @@
+
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
 
     const gallery = document.getElementById("gallery-container");
 
-    gallery.innerHTML = "";
-
     data.forEach(photo => {
 
-      let publicationsHTML = "";
+      let verifiedUsesHTML = "";
 
-      photo.publishedIn.forEach(use => {
+      photo.verifiedUses.forEach(use => {
 
-        publicationsHTML += `
-          <a
-            href="${use.url}"
-            class="verified-card"
-            target="_blank"
-            rel="noopener noreferrer">
+        verifiedUsesHTML += `
+          <a href="${use.url}"
+             class="verified-card"
+             target="_blank"
+             rel="noopener noreferrer">
 
               <div class="verified-site">
                   ${use.site}
@@ -28,7 +26,7 @@ fetch("data.json")
               </div>
 
               <div class="verified-link">
-                  Read Article →
+                  Open Article →
               </div>
 
           </a>
@@ -51,21 +49,21 @@ fetch("data.json")
 
                 <a
                     class="unsplash-button"
-                    href="${photo.unsplashPhoto}"
+                    href="${photo.unsplash}"
                     target="_blank"
                     rel="noopener noreferrer">
 
-                    View Original on Unsplash
+                    View on Unsplash
 
                 </a>
 
                 <h3 class="verified-heading">
-                    Published In
+                    Verified Uses
                 </h3>
 
                 <div class="verified-carousel">
 
-                    ${publicationsHTML}
+                    ${verifiedUsesHTML}
 
                 </div>
 
@@ -79,24 +77,5 @@ fetch("data.json")
 
   })
   .catch(error => {
-    console.error("Error loading data.json:", error);
+      console.error("Error loading data.json:", error);
   });
-
-
-// ===============================
-// Explore Collection Button
-// ===============================
-
-const exploreBtn = document.querySelector(".explore-btn");
-
-if (exploreBtn) {
-
-  exploreBtn.addEventListener("click", () => {
-
-    document.getElementById("gallery").scrollIntoView({
-      behavior: "smooth"
-    });
-
-  });
-
-}
