@@ -4,14 +4,13 @@ fetch("data.json")
 
     const gallery = document.getElementById("gallery-container");
 
-    // Clear existing content
     gallery.innerHTML = "";
 
     data.forEach(photo => {
 
       let publicationsHTML = "";
 
-      photo.verifiedUses.forEach(use => {
+      photo.publishedIn.forEach(use => {
 
         publicationsHTML += `
           <a
@@ -52,7 +51,7 @@ fetch("data.json")
 
                 <a
                     class="unsplash-button"
-                    href="${photo.unsplash}"
+                    href="${photo.unsplashPhoto}"
                     target="_blank"
                     rel="noopener noreferrer">
 
