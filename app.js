@@ -1,21 +1,24 @@
-
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
 
     const gallery = document.getElementById("gallery-container");
 
+    // Clear existing content
+    gallery.innerHTML = "";
+
     data.forEach(photo => {
 
-      let verifiedUsesHTML = "";
+      let publicationsHTML = "";
 
       photo.verifiedUses.forEach(use => {
 
-        verifiedUsesHTML += `
-          <a href="${use.url}"
-             class="verified-card"
-             target="_blank"
-             rel="noopener noreferrer">
+        publicationsHTML += `
+          <a
+            href="${use.url}"
+            class="verified-card"
+            target="_blank"
+            rel="noopener noreferrer">
 
               <div class="verified-site">
                   ${use.site}
@@ -26,7 +29,7 @@ fetch("data.json")
               </div>
 
               <div class="verified-link">
-                  Open Article →
+                  Read Article →
               </div>
 
           </a>
@@ -53,17 +56,17 @@ fetch("data.json")
                     target="_blank"
                     rel="noopener noreferrer">
 
-                    View on Unsplash
+                    View Original on Unsplash
 
                 </a>
 
                 <h3 class="verified-heading">
-                    Verified Uses
+                    Published In
                 </h3>
 
                 <div class="verified-carousel">
 
-                    ${verifiedUsesHTML}
+                    ${publicationsHTML}
 
                 </div>
 
@@ -77,5 +80,24 @@ fetch("data.json")
 
   })
   .catch(error => {
-      console.error("Error loading data.json:", error);
+    console.error("Error loading data.json:", error);
   });
+
+
+// ===============================
+// Explore Collection Button
+// ===============================
+
+const exploreBtn = document.querySelector(".explore-btn");
+
+if (exploreBtn) {
+
+  exploreBtn.addEventListener("click", () => {
+
+    document.getElementById("gallery").scrollIntoView({
+      behavior: "smooth"
+    });
+
+  });
+
+}
