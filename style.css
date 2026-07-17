@@ -310,7 +310,7 @@ body{
 
     margin-bottom: 80px;
 
-    background: #BFCDC2; /* Custom Sage Green */
+    background: #BFCDC2;
 
     padding: 50px 60px;
 
@@ -596,29 +596,31 @@ body{
 
 .verified-card{
 
-    min-width:300px;
-    width:300px;
-    aspect-ratio: 1 / 1; /* Makes the card perfectly square */
+    min-width:300px !important;
+    width:300px !important;
+    height:300px !important;
+    
+    border-radius: 0px !important; /* Forces the card to be strictly square */
 
-    background:#8ca19e; /* Custom Slate-Sage background */
+    background:#8ca19e !important; 
 
     padding:28px;
 
     text-decoration:none;
 
-    color:#ffffff; /* White text for great readability */
+    color:#ffffff !important; 
 
     box-shadow:0 12px 35px rgba(0,0,0,.08);
 
-    border:none; /* Removed old border */
+    border:none !important; 
 
     transition:.3s;
 
     scroll-snap-align:start;
 
-    display:flex;
+    display:flex !important;
     flex-direction:column;
-    justify-content:space-between; /* Perfect item spacing in square format */
+    justify-content:space-between; 
 
 }
 
@@ -638,7 +640,7 @@ body{
 
     letter-spacing:1px;
 
-    color:#e5edea; /* Lighter color for clean label layout */
+    color:#e5edea !important; 
 
     margin-bottom:14px;
 
@@ -658,7 +660,7 @@ body{
 
 .verified-link{
 
-    color:#ffffff;
+    color:#ffffff !important;
 
     font-weight:600;
 
@@ -692,8 +694,9 @@ body{
 
     .verified-card{
 
-        min-width:260px;
-        width:260px;
+        min-width:260px !important;
+        width:260px !important;
+        height:260px !important;
 
     }
 
