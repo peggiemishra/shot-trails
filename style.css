@@ -53,7 +53,7 @@ body{
 
 .sidebar{
 
-    background:white;
+    background:#fcfaf6; 
 
     padding:45px 35px;
 
@@ -310,7 +310,7 @@ body{
 
     margin-bottom: 80px;
 
-    background: #BFCDC2;
+    background: #BFCDC2; 
 
     padding: 50px 60px;
 
@@ -600,17 +600,16 @@ body{
     width:300px !important;
     height:300px !important;
     
-    border-radius: 0px !important; /* Forces the card to be strictly square */
+    border-radius: 0px !important; 
 
-    background:#8ca19e !important; 
+    /* Updated to the requested beautiful light sage tint (#d9e4d7) */
+    background:#d9e4d7 !important; 
 
     padding:28px;
 
     text-decoration:none;
 
-    color:#ffffff !important; 
-
-    box-shadow:0 12px 35px rgba(0,0,0,.08);
+    box-shadow:0 12px 35px rgba(0,0,0,.04);
 
     border:none !important; 
 
@@ -628,7 +627,7 @@ body{
 
     transform:translateY(-6px);
 
-    box-shadow:0 20px 45px rgba(0,0,0,.15);
+    box-shadow:0 20px 45px rgba(0,0,0,.1);
 
 }
 
@@ -640,7 +639,8 @@ body{
 
     letter-spacing:1px;
 
-    color:#e5edea !important; 
+    /* Styled to rich mid-green tone for clean layout text contrast */
+    color:#4a6154 !important; 
 
     margin-bottom:14px;
 
@@ -654,13 +654,17 @@ body{
 
     line-height:1.5;
 
+    /* Crisp dark forest green text for high reading visibility */
+    color:#1a3327 !important; 
+
     margin-bottom:auto;
 
 }
 
 .verified-link{
 
-    color:#ffffff !important;
+    /* Sharp matching green for clear actionable flow */
+    color:#1a3327 !important; 
 
     font-weight:600;
 
