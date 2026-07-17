@@ -2,11 +2,18 @@
   {
     "id": 1,
     "title": "Tea Plantation, India",
+
+    "location": "Darjeeling, India",
+
+    "year": "2020",
+
+    "story": "Captured during a peaceful morning surrounded by endless tea gardens. What began as a quiet landscape photograph later became part of international research discussing India's agrarian challenges. It remains one of the most meaningful journeys one of my photographs has taken.",
+
     "photo": "https://images.unsplash.com/flagged/photo-1582360694694-1eb3d0947263?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 
-    "unsplash": "https://unsplash.com/@peggie_mishra",
+    "unsplashPhoto": "https://unsplash.com/photos/REPLACE_WITH_PHOTO_LINK",
 
-    "verifiedUses": [
+    "publishedIn": [
       {
         "site": "Harvard International Review",
         "title": "Soil Degradation and Crippling Debt: The Agrarian Crisis in India",
