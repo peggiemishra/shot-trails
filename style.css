@@ -327,16 +327,80 @@ body{
 }
 
 /* ===========================
-   EMPTY SECTIONS
+   PERSONAL INTRO (NEW)
 =========================== */
 
-.stats{
+.personal-intro {
 
-    margin-top:120px;
+    margin-top: 100px;
 
-    min-height:200px;
+    margin-bottom: 80px;
+
+    background: var(--white);
+
+    padding: 50px 60px;
+
+    border-radius: 28px;
+
+    box-shadow: 0 15px 45px rgba(0,0,0,.04);
+
+    font-family: 'Cormorant Garamond', serif;
+
+    font-style: italic;
+
+    font-size: 24px;
+
+    line-height: 1.8;
+
+    color: #333;
 
 }
+
+.intro-greeting {
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+    color: var(--green);
+
+}
+
+.intro-text {
+
+    margin-bottom: 20px;
+
+    text-align: justify;
+
+}
+
+.intro-signoff {
+
+    margin-top: 40px;
+
+    font-size: 24px;
+
+    color: #444;
+
+}
+
+.signature {
+
+    font-size: 32px;
+
+    font-weight: 700;
+
+    color: var(--green);
+
+    margin-top: 5px;
+
+}
+
+/* ===========================
+   EMPTY SECTIONS
+=========================== */
 
 .gallery{
 
@@ -410,6 +474,26 @@ body{
     gap:25px;
 
     align-items: center;
+
+}
+
+.personal-intro {
+
+    padding: 35px 25px;
+
+    font-size: 20px;
+
+}
+
+.intro-greeting {
+
+    font-size: 24px;
+
+}
+
+.signature {
+
+    font-size: 28px;
 
 }
 
