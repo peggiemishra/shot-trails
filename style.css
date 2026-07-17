@@ -446,3 +446,222 @@ body{
 }
 
 }
+
+/* ===========================
+   PHOTO GALLERY MVP
+=========================== */
+
+.section-title{
+
+    font-family:'Cormorant Garamond',serif;
+    font-size:48px;
+    color:var(--green);
+    margin-bottom:40px;
+
+}
+
+.photo-card{
+
+    background:var(--white);
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 50px rgba(0,0,0,.08);
+
+    margin-bottom:80px;
+
+}
+
+.photo-image{
+
+    width:100%;
+
+    height:650px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+.photo-content{
+
+    padding:40px;
+
+}
+
+.photo-content h2{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:46px;
+
+    margin-bottom:20px;
+
+}
+
+.unsplash-button{
+
+    display:inline-block;
+
+    background:var(--green);
+
+    color:white;
+
+    text-decoration:none;
+
+    padding:14px 28px;
+
+    border-radius:50px;
+
+    margin-bottom:40px;
+
+    transition:.3s;
+
+}
+
+.unsplash-button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.verified-heading{
+
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:34px;
+
+    margin-bottom:25px;
+
+    color:var(--green);
+
+}
+
+.verified-carousel{
+
+    display:flex;
+
+    gap:25px;
+
+    overflow-x:auto;
+
+    scroll-snap-type:x mandatory;
+
+    padding-bottom:15px;
+
+}
+
+.verified-carousel::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.verified-carousel::-webkit-scrollbar-thumb{
+
+    background:#cfcfcf;
+
+    border-radius:20px;
+
+}
+
+.verified-card{
+
+    min-width:360px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:28px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+    border:1px solid #ececec;
+
+    transition:.3s;
+
+    scroll-snap-align:start;
+
+}
+
+.verified-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.verified-site{
+
+    font-size:12px;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    color:#777;
+
+    margin-bottom:14px;
+
+}
+
+.verified-title{
+
+    font-size:20px;
+
+    font-weight:600;
+
+    line-height:1.5;
+
+    margin-bottom:30px;
+
+}
+
+.verified-link{
+
+    color:var(--green);
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:1000px){
+
+    .photo-image{
+
+        height:380px;
+
+    }
+
+    .photo-content{
+
+        padding:25px;
+
+    }
+
+    .photo-content h2{
+
+        font-size:34px;
+
+    }
+
+    .verified-card{
+
+        min-width:280px;
+
+    }
+
+}
