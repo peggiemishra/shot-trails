@@ -290,32 +290,6 @@ body{
 
 }
 
-.hero button{
-
-    background:var(--green);
-
-    color:white;
-
-    border:none;
-
-    padding:18px 38px;
-
-    border-radius:50px;
-
-    font-size:16px;
-
-    cursor:pointer;
-
-    transition:.3s;
-
-}
-
-.hero button:hover{
-
-    transform:translateY(-3px);
-
-}
-
 .hero-right img{
 
     width:100%;
@@ -327,7 +301,7 @@ body{
 }
 
 /* ===========================
-   PERSONAL INTRO (NEW)
+   PERSONAL INTRO
 =========================== */
 
 .personal-intro {
@@ -336,13 +310,13 @@ body{
 
     margin-bottom: 80px;
 
-    background: var(--white);
+    background: #eaf1e3; /* Soft Sage Tint */
 
     padding: 50px 60px;
 
     border-radius: 28px;
 
-    box-shadow: 0 15px 45px rgba(0,0,0,.04);
+    box-shadow: 0 15px 45px rgba(0,0,0,.03);
 
     font-family: 'Cormorant Garamond', serif;
 
@@ -352,7 +326,7 @@ body{
 
     line-height: 1.8;
 
-    color: #333;
+    color: #2b3a2f;
 
 }
 
@@ -382,7 +356,7 @@ body{
 
     font-size: 24px;
 
-    color: #444;
+    color: #3d4a40;
 
 }
 
