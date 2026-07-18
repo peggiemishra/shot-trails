@@ -121,5 +121,28 @@
         "url": "https://activeindiaholidays.com/tours/jungle-trail-and-backwaters"
       }
     ]
+  },
+  {
+    "id": 2,
+    "title": "Green Tomatoes on a Vine",
+    "photo": "https://images.unsplash.com/photo-1768113802430-dcb7c874407f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "unsplash": "https://unsplash.com/photos/three-green-tomatoes-growing-on-a-vine-LEp5Py6_STg",
+    "verifiedUses": [
+      {
+        "site": "AOL News",
+        "title": "Plant 5 Vegetables in June to Keep Your Garden Thriving Until Fall",
+        "url": "https://www.aol.com/articles/plant-5-vegetables-june-keep-144500000.html"
+      },
+      {
+        "site": "Dengarden",
+        "title": "5 Vegetables to Plant in June for a Fall Harvest",
+        "url": "https://dengarden.com/news/5-vegetables-to-plant-in-june-for-a-fall-harvest"
+      },
+      {
+        "site": "Yahoo Shopping",
+        "title": "June Is the Perfect Time to Plant 5 Vegetables for Late Season Harvests",
+        "url": "https://shopping.yahoo.com/home-garden/gardening/articles/june-perfect-time-plant-5-144500799.html"
+      }
+    ]
   }
 ]
