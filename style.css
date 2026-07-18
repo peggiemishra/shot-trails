@@ -1,5 +1,5 @@
 /* ==========================================================
-    RESET & BASE (🔥 HIGH-CONTRAST PREMIUM EDITORIAL COMBINATION)
+    RESET & BASE (🔥 FORCED HIGH-CONTRAST EDITORIAL TEXTURE)
 ========================================================== */
 *{
     margin:0;
@@ -15,15 +15,15 @@ body{
     font-family:'Inter',sans-serif;
     color:#1d1d1d;
     
-    /* 🔥 Changed Base Body to Pearl Minimal White for Luxury Pop */
-    background-color: #faf9f6;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
+    /* 🔥 Clear Pearl White Background for Maximum Pop */
+    background-color: #faf9f5 !important;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E") !important;
 }
 
 :root{
-    --bg:#faf9f6;
+    --bg:#faf9f5;
     --white:#ffffff;
-    --green:#295943;
+    --green:#1b3b2b; /* Slightly deeper green for contrast */
     --gold:#d4b46a;
     --text:#222;
     --gray:#666;
@@ -39,21 +39,20 @@ body{
 }
 
 /* ==========================================================
-    🔥 SIDEBAR: MUTED LUXURY IVORY-SAGE CONTRAST PANEL
+    🔥 SIDEBAR: VISIBLE ASH-IVORY LAYERED CONTRAST
 ========================================================== */
 .sidebar{
-    /* 🔥 Sidebar background changed to a clearly visible soft aesthetic tone */
-    background-color: #f2ede4 !important; 
+    /* 🔥 Color code forced to high contrast Muted Ivory-Sand */
+    background-color: #f0eae1 !important; 
     padding:45px 35px;
     
-    /* Clean Solid Separator Line */
-    border-right: 1px solid rgba(41, 89, 67, 0.12) !important;
+    /* Solid Elegant Separator line */
+    border-right: 2px solid rgba(27, 59, 43, 0.15) !important;
     position:sticky;
     top:0;
     height:100vh;
     overflow:auto;
-    /* Subtle inner shadow to give it an elegant depth */
-    box-shadow: inset -8px 0 15px rgba(0, 0, 0, 0.02); 
+    box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.03) !important; 
 }
 
 .logo{
@@ -89,7 +88,7 @@ body{
 .bio{
     margin-top:25px;
     text-align:center;
-    color:#666;
+    color:#555;
     line-height:1.8;
 }
 
@@ -104,11 +103,12 @@ body{
 }
 
 .stat{
-    background:#ffffff; /* White stats cards to contrast against the ivory panel */
+    background:#ffffff !important; /* Standout stark white stat cards inside ivory panel */
     padding:18px;
     border-radius:18px;
     text-align:center;
-    box-shadow:0 4px 12px rgba(0,0,0,.03);
+    box-shadow:0 4px 15px rgba(0,0,0,.04) !important;
+    border: 1px solid rgba(0,0,0,0.01);
 }
 
 .stat h2{
@@ -127,7 +127,7 @@ body{
 .sidebar-featured-text {
     margin-top: 35px;
     padding-top: 25px;
-    border-top: 1px dashed rgba(41, 89, 67, 0.2);
+    border-top: 1px dashed rgba(27, 59, 43, 0.2);
     overflow: hidden !important; 
     width: 100% !important;
 }
@@ -186,7 +186,7 @@ body{
 }
 
 /* ===========================
-    MAIN DASHBOARD GRID
+    MAIN AREA DASHBOARD
 =========================== */
 .main-content{
     padding:45px 70px;
@@ -216,7 +216,7 @@ body{
 }
 
 /* ===========================
-    HERO WRAPPER SETTINGS
+    HERO CONFIGURATION
 =========================== */
 .hero{
     display:grid;
@@ -260,7 +260,7 @@ body{
 }
 
 /* ===========================
-    PERSONAL INTRO BOX
+    PERSONAL BIO BLOCK
 =========================== */
 .personal-intro {
     margin-top: 100px;
@@ -302,20 +302,20 @@ body{
 }
 
 /* ===========================
-    PHOTO TRAILS DISPLAY BLOCKS
+    PHOTO BLOCKS & CRISP CARDS
 =========================== */
 .gallery{ margin-top:80px; min-height:400px; }
 .section-title{ font-family:'Cormorant Garamond',serif; font-size:48px; color:var(--green); margin-bottom:40px; }
 
-/* Crisp White Cards to sit cleanly on Pearl White base background */
+/* Pure White dynamic frame blocks over minimal layout base background */
 .photo-card{
     background: #ffffff !important; 
     border-radius:30px;
     overflow:hidden;
-    box-shadow:0 15px 40px rgba(0,0,0,.04);
+    box-shadow:0 15px 45px rgba(0,0,0,.04) !important;
     margin-bottom:80px;
     width: 100%;
-    border: 1px solid rgba(0,0,0,0.02);
+    border: 1px solid rgba(0,0,0,0.01);
 }
 
 .photo-image{
@@ -382,7 +382,7 @@ body{
 .verified-link{ color:#1a3327 !important; font-weight:600; margin-top:20px; }
 
 /* ==========================================
-   CENTERED FOOTER SIGN-OFF
+   CENTERED SIGN-OFF FOOTER
 ========================================== */
 .photography-footer {
     margin-top: 100px;
@@ -419,7 +419,7 @@ body{
 .footer-signoff { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: #555; margin-top: 5px; letter-spacing: 0.5px; }
 
 /* ==========================================================
-    MOBILE PLATFORMS & COMPACT LAYOUT SEGMENTATION
+    MOBILE CONTROLS LAYOUT ADJUSTMENTS
 ========================================================== */
 @media(max-width:1000px){
     .layout{ grid-template-columns:1fr; }
@@ -428,7 +428,7 @@ body{
         position:relative; 
         height:auto; 
         border-right:none !important; 
-        border-bottom:1px solid rgba(41, 89, 67, 0.12) !important; 
+        border-bottom:2px solid rgba(27, 59, 43, 0.15) !important; 
         box-shadow: none !important;
     }
     
