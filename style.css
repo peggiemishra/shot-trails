@@ -1,5 +1,5 @@
 /* ==========================================================
-    RESET & BASE (🔥 PREMIUM MATTE GRAINY TEXTURE INTEGRATED)
+    RESET & BASE (🔥 EDITORIAL LUXURY COMBINATION)
 ========================================================== */
 *{
     margin:0;
@@ -14,14 +14,12 @@ html{
 body{
     font-family:'Inter',sans-serif;
     color:#1d1d1d;
-    /* Premium Matte Grainy Texture Applied Directly */
-    background-color: #f7f3eb;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    
+    /* Dynamic Base Body Texture: Warm Beige Backdrop */
+    background-color: #f8f3eb;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
 }
 
-/* ===========================
-    VARIABLES
-=========================== */
 :root{
     --bg:#f8f3eb;
     --white:#ffffff;
@@ -40,17 +38,20 @@ body{
     min-height:100vh;
 }
 
-/* ===========================
-    SIDEBAR & PROFILE IMAGE FIX
-=========================== */
+/* ==========================================================
+    🔥 SIDEBAR: WARM IVORY (LAID OVER TEXTURED BACKGROUND)
+========================================================== */
 .sidebar{
-    background: transparent; /* Seamless blend with textured background */
+    background-color: #f7f4ee !important; /* Premium Warm Ivory Panel Layer */
     padding:45px 35px;
-    border-right:1px solid rgba(0,0,0,0.05);
+    
+    /* Elegant Clean Separation Border */
+    border-right: 1px solid rgba(80, 70, 55, 0.08) !important;
     position:sticky;
     top:0;
     height:100vh;
     overflow:auto;
+    box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.005); /* Subtle radial edge shadow depth */
 }
 
 .logo{
@@ -91,7 +92,7 @@ body{
 }
 
 /* ===========================
-    STATS DIRECTORY
+    SIDEBAR DATA STATS
 =========================== */
 .sidebar-stats{
     margin-top:45px;
@@ -183,7 +184,7 @@ body{
 }
 
 /* ===========================
-    MAIN AREA GRID
+    MAIN DASHBOARD GRID
 =========================== */
 .main-content{
     padding:45px 70px;
@@ -213,7 +214,7 @@ body{
 }
 
 /* ===========================
-    HERO SECTION & IMAGE RESIZE
+    HERO WRAPPER SETTINGS
 =========================== */
 .hero{
     display:grid;
@@ -257,7 +258,7 @@ body{
 }
 
 /* ===========================
-    PERSONAL INTRO TEXT AREA
+    PERSONAL INTRO BOX
 =========================== */
 .personal-intro {
     margin-top: 100px;
@@ -299,16 +300,17 @@ body{
 }
 
 /* ===========================
-    PHOTO FOOTPRINTS CARDS ENGINE
+    PHOTO TRAILS DISPLAY BLOCKS
 =========================== */
 .gallery{ margin-top:80px; min-height:400px; }
 .section-title{ font-family:'Cormorant Garamond',serif; font-size:48px; color:var(--green); margin-bottom:40px; }
 
+/* Dynamic Card Wrappers */
 .photo-card{
-    background:var(--white);
+    background: var(--white) !important; /* Premium Crisp White Display Cards */
     border-radius:30px;
     overflow:hidden;
-    box-shadow:0 20px 50px rgba(0,0,0,.08);
+    box-shadow:0 20px 50px rgba(0,0,0,.05);
     margin-bottom:80px;
     width: 100%;
 }
@@ -352,7 +354,7 @@ body{
 
 .verified-carousel::-webkit-scrollbar{ display: none !important; width: 0 !important; height: 0 !important; }
 
-/* Desktop Carousel Cards Grid Layout Framework */
+/* Slider Content Elements */
 .verified-card{
     flex: 0 0 280px !important; 
     width: 280px !important;
@@ -378,7 +380,7 @@ body{
 .verified-link{ color:#1a3327 !important; font-weight:600; margin-top:20px; }
 
 /* ==========================================
-   CENTERED SIGN-OFF FOOTER
+   CENTERED FOOTER SIGN-OFF
 ========================================== */
 .photography-footer {
     margin-top: 100px;
@@ -415,11 +417,19 @@ body{
 .footer-signoff { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: #555; margin-top: 5px; letter-spacing: 0.5px; }
 
 /* ==========================================================
-    🔥 RESPONSIVE MOBILE FIXES & TIGHT COMPACT CARD LAYOUT
+    MOBILE PLATFORMS & COMPACT LAYOUT SEGMENTATION
 ========================================================== */
 @media(max-width:1000px){
     .layout{ grid-template-columns:1fr; }
-    .sidebar{ position:relative; height:auto; border-right:none; border-bottom:1px solid #eee; }
+    
+    .sidebar{ 
+        position:relative; 
+        height:auto; 
+        border-right:none !important; 
+        border-bottom:1px solid rgba(80, 70, 55, 0.08) !important; 
+        box-shadow: none !important;
+    }
+    
     .main-content{ padding:40px 20px; } 
     .hero{ grid-template-columns:1fr; text-align:center; gap: 40px; }
     .hero p{ margin:auto; margin-bottom:35px; }
@@ -434,33 +444,21 @@ body{
     .photo-content{ padding:25px; }
     .photo-content h2{ font-size:34px; }
 
-    /* 🔥 FIXED: Mobile view card height compression to remove ugly hollow gaps */
     .verified-card{
         flex: 0 0 240px !important; 
         width: 240px !important;
         min-width: 240px !important;
         max-width: 240px !important;
-        min-height: 190px !important; /* Fixed tight layout height boundary */
+        min-height: 190px !important; 
         padding: 20px 18px;
         display: flex !important;
         flex-direction: column !important;
         justify-content: flex-start; 
     }
     
-    .verified-site {
-        margin-bottom: 8px !important;
-    }
-
-    .verified-title { 
-        font-size: 15px !important; 
-        line-height: 1.4 !important; 
-        margin-bottom: 12px !important; 
-    }
-    
-    .verified-link { 
-        font-size: 14px !important; 
-        margin-top: auto !important; /* Checkout will cleanly anchor at the exact bottom */
-    }
+    .verified-site { margin-bottom: 8px !important; }
+    .verified-title { font-size: 15px !important; line-height: 1.4 !important; margin-bottom: 12px !important; }
+    .verified-link { font-size: 14px !important; margin-top: auto !important; }
 
     .photography-footer { margin-top: 60px; padding-top: 35px; padding-bottom: 45px; }
     .footer-journey-text { font-size: 17px; }
