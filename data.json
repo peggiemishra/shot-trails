@@ -278,5 +278,117 @@
         "url": "https://talebones.substack.com/p/talestack-news-issue-26"
       }
     ]
+  },
+  {
+    "id": 6,
+    "title": "Sunset, Kerala, India",
+    "photo": "https://images.unsplash.com/photo-1584360486385-e2bd6ed9864d?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "unsplash": "https://unsplash.com/photos/silhouette-of-people-on-beach-during-sunset-D0yiK0JgLTo",
+    "verifiedUses": [
+      {
+        "site": "Pickyourtrail",
+        "title": "Romantic Getaways: Curating the Perfect 9-Day Honeymoon Itinerary to Coastal Kerala",
+        "url": "https://pickyourtrail.com/blog/9-days-honeymoon-itinerary-to-kerala"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Virupaksha Temple, Hampi, India",
+    "photo": "https://images.unsplash.com/photo-1631986683754-7d511e03864d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "unsplash": "https://unsplash.com/photos/a-tall-tower-with-a-clock-on-top-of-it-oUdSO-tFVf8",
+    "verifiedUses": [
+      {
+        "site": "Asian Voice",
+        "title": "International Updates: Bahrain Allots Land to Construct New Hindu Temple Complex",
+        "url": "https://www.asian-voice.com/News/International/After-Abu-Dhabi,-Bahrain-allots-land-to-construct-Hindu-temple"
+      },
+      {
+        "site": "Land of Wanderlust",
+        "title": "Heritage Explorations: 15 Highly Popular Tourist Places & Hidden Architecture in Mangalore Circuit",
+        "url": "https://thelandofwanderlust.com/web-stories/15-popular-tourist-places-in-mangalore/"
+      },
+      {
+        "site": "TripXL Guides",
+        "title": "Regional Heritage Destinations: Comprehensive Exploration and Historical Sites Near Guntur",
+        "url": "https://tripxl.com/blog/places-to-visit-near-guntur/"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Tsomgo Chho lake, Sikkim",
+    "photo": "https://images.unsplash.com/photo-1631986684487-a1ec60119cd7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "unsplash": "https://unsplash.com/photos/a-snow-covered-mountain-with-a-clear-blue-sky-8jc3j3WnxlA",
+    "verifiedUses": [
+      {
+        "site": "NDTV Travel",
+        "title": "High Altitude Wonders: Pure Wilderness and Top Places to Visit Across Sikkim",
+        "url": "https://www.ndtv.com/travel/best-places-to-visit-in-sikkim-8369075"
+      },
+      {
+        "site": "Gangtok Tourism",
+        "title": "Himalayan Getaways: Curated Eastern India Holiday Packages and High Altitude Excursions",
+        "url": "https://www.gangtoktourism.in/gangtok-holiday-packages"
+      },
+      {
+        "site": "Yukti Travel Tracks",
+        "title": "Premium Honeymoon Frameworks: Romantic Itinerary Modules for Gangtok Circuits",
+        "url": "https://www.yuktitravel.com/product/gangtok-honeymoon-tour-packages/"
+      },
+      {
+        "site": "TripMall Engine",
+        "title": "North India Scenic Loops: 9 Days Sikkim Tour Cover Gangtok, Lachung, and Darjeeling",
+        "url": "https://tripmall.in/tour/9-days-sikkim-tour-gangtok-lachung-pelling-darjeeling"
+      },
+      {
+        "site": "Goodwill Tour Packages",
+        "title": "Snowy Paradise Explorer: Complete High Altitude Routes and Logistics for North Sikkim",
+        "url": "https://www.goodwilltour.in/tour-details/North-Sikkim-Tour-Package"
+      },
+      {
+        "site": "MNM Travels",
+        "title": "Eastern Highlights Showcase: Best of Gangtok, Pelling, and Historic Hill Stations",
+        "url": "https://mnmtravels.in/india-holiday-packages/best_of_gangtok_Pelling_Darjeeling"
+      },
+      {
+        "site": "Trekking in Sikkim",
+        "title": "River Rafting and Silk Route Excursion Packages Across Pristine Teesta Watersheds",
+        "url": "https://www.trekkinginsikkims.com/tours/-river-rafting-on-teesta-and-rangit-river-with-silk-route-excursion"
+      },
+      {
+        "site": "Aanya Tours",
+        "title": "Extended Mountain Pass Explorations: 10 Nights and 11 Days Kalimpong to Lachung Circuit",
+        "url": "https://aanyatours.com/product/sikkim-10nights-11days-kalimpong-01n-gangtok-03n-lachung-02n-pelling-02n-darjeeling-02n/"
+      },
+      {
+        "site": "Sakshi Travels Blog",
+        "title": "High Altitude Photographic Horizons: Visual Stories from the Peaks of Sikkim",
+        "url": "https://www.sakshitravels.in/blogs/8e194393-a867-48a4-8d8e-d96331f5b610"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Hawa Mahal, Jaipur, India",
+    "photo": "https://images.unsplash.com/photo-1631987398000-e627564b3847?q=80&w=2091&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "unsplash": "https://unsplash.com/photos/a-very-tall-building-with-many-windows-and-balconies-fy0u51CgC54",
+    "verifiedUses": [
+      {
+        "site": "India Today",
+        "title": "5 Great Places to Visit Near Delhi for a Long Weekend Road Trip",
+        "url": "https://www.indiatoday.in/visualstories/information/5-great-places-to-visit-near-delhi-for-a-long-weekend-186898-13-03-2025"
+      },
+      {
+        "site": "Tiger Safari",
+        "title": "Luxury Rajasthan Safaris: Curated Golden Triangle & Heritage Wilderness Circuits",
+        "url": "https://www.tigersafari.net/luxury-rajasthan-safari/"
+      },
+      {
+        "site": "Thira Creative",
+        "title": "Cultural Showcases: Preserving the Intricate Window Alignments of Historic Jaipur Architecture",
+        "url": "https://www.instagram.com/p/CmubqAApFYi/"
+      }
+    ]
   }
 ]
