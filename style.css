@@ -1,5 +1,5 @@
 /* ==========================================================
-    RESET & BASE (🔥 FORCED HIGH-CONTRAST EDITORIAL TEXTURE)
+    RESET & BASE (HIGH-CONTRAST PREMIUM EDITORIAL TEXTURE)
 ========================================================== */
 *{
     margin:0;
@@ -15,7 +15,7 @@ body{
     font-family:'Inter',sans-serif;
     color:#1d1d1d;
     
-    /* 🔥 Clear Pearl White Background for Maximum Pop */
+    /* Clear Pearl White Background for Maximum Pop */
     background-color: #faf9f5 !important;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E") !important;
 }
@@ -23,7 +23,7 @@ body{
 :root{
     --bg:#faf9f5;
     --white:#ffffff;
-    --green:#1b3b2b; /* Slightly deeper green for contrast */
+    --green:#1b3b2b;
     --gold:#d4b46a;
     --text:#222;
     --gray:#666;
@@ -39,14 +39,11 @@ body{
 }
 
 /* ==========================================================
-    🔥 SIDEBAR: VISIBLE ASH-IVORY LAYERED CONTRAST
+    SIDEBAR: VISIBLE ASH-IVORY LAYERED CONTRAST
 ========================================================== */
 .sidebar{
-    /* 🔥 Color code forced to high contrast Muted Ivory-Sand */
     background-color: #f0eae1 !important; 
     padding:45px 35px;
-    
-    /* Solid Elegant Separator line */
     border-right: 2px solid rgba(27, 59, 43, 0.15) !important;
     position:sticky;
     top:0;
@@ -103,7 +100,7 @@ body{
 }
 
 .stat{
-    background:#ffffff !important; /* Standout stark white stat cards inside ivory panel */
+    background:#ffffff !important; 
     padding:18px;
     border-radius:18px;
     text-align:center;
@@ -301,21 +298,20 @@ body{
     margin-top: 5px;
 }
 
-/* ===========================
-    PHOTO BLOCKS & CRISP CARDS
-=========================== */
+/* ==========================================================
+   🔥 DYNAMIC MAIN PHOTO CARD: UPDATED TO PREMIUM LIGHT SAND
+========================================================== */
 .gallery{ margin-top:80px; min-height:400px; }
 .section-title{ font-family:'Cormorant Garamond',serif; font-size:48px; color:var(--green); margin-bottom:40px; }
 
-/* Pure White dynamic frame blocks over minimal layout base background */
 .photo-card{
-    background: #ffffff !important; 
+    background: #e9e4da !important; /* 🔥 Beautiful Light Sand/Soft Khaki custom paper tint */
     border-radius:30px;
     overflow:hidden;
     box-shadow:0 15px 45px rgba(0,0,0,.04) !important;
     margin-bottom:80px;
     width: 100%;
-    border: 1px solid rgba(0,0,0,0.01);
+    border: 1px solid rgba(41, 89, 67, 0.05); /* Complementary clean frame stroke */
 }
 
 .photo-image{
@@ -326,7 +322,13 @@ body{
 }
 
 .photo-content{ padding:40px; overflow:hidden; }
-.photo-content h2{ font-family:'Cormorant Garamond',serif; font-size:46px; margin-bottom:20px; }
+
+.photo-content h2{ 
+    font-family:'Cormorant Garamond',serif; 
+    font-size:46px; 
+    color: #1a3327; /* Rich dark contrast text */
+    margin-bottom:20px; 
+}
 
 .unsplash-button{
     display:inline-block;
