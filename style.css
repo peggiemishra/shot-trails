@@ -196,7 +196,7 @@ body{
 
 .main-content{
     padding:45px 70px;
-    overflow: hidden; /* Prevent body blowout */
+    overflow: hidden; 
 }
 
 /* ===========================
@@ -338,6 +338,7 @@ body{
     overflow:hidden;
     box-shadow:0 20px 50px rgba(0,0,0,.08);
     margin-bottom:80px;
+    width: 100%;
 }
 
 .photo-image{
@@ -381,43 +382,43 @@ body{
 }
 
 .verified-carousel{
-    display:flex !important;
-    flex-wrap:nowrap !important; /* 🔥 FIXED: Rokes cards from dropping into a vertical list */
-    gap:20px;
-    overflow-x:auto !important;  /* 🔥 FIXED: Turn on sideways swiping/scrolling */
-    overflow-y:hidden !important;
-    scroll-snap-type:x mandatory;
-    scroll-behavior:smooth;
-    padding-bottom:15px;
-    -webkit-overflow-scrolling:touch; 
+    display: flex !important;
+    flex-wrap: nowrap !important; /* Forces row setup */
+    gap: 20px;
+    overflow-x: auto !important;  
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 15px;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; /* Firefox se scrollbar hatane ke liye */
+    -ms-overflow-style: none; /* IE/Edge se scrollbar hatane ke liye */
 }
 
+/* 🔥 FIXED: Chrome, Safari aur modern browsers se scrollbar gayab karne ke liye */
 .verified-carousel::-webkit-scrollbar{
-    height:8px;
-}
-
-.verified-carousel::-webkit-scrollbar-thumb{
-    background:#cfcfcf;
-    border-radius:20px;
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
 }
 
 .verified-card{
-    flex:0 0 260px !important; 
-    width:260px !important;
-    min-width:260px !important; /* 🔥 FIXED: Stops flex box from shrinking cards smaller */
-    max-width:260px !important;
-    height:280px !important;
-    border-radius:12px !important; 
-    background:#d9e4d7 !important; 
-    padding:28px;
-    text-decoration:none;
-    box-shadow:0 12px 35px rgba(0,0,0,.04);
-    border:none !important; 
-    transition:.3s;
-    scroll-snap-align:start;
-    display:flex !important;
-    flex-direction:column;
-    justify-content:space-between; 
+    flex: 0 0 280px !important; /* Sizing rigid block layout */
+    width: 280px !important;
+    min-width: 280px !important; 
+    max-width: 280px !important;
+    height: 280px !important;
+    border-radius: 12px !important; 
+    background: #d9e4d7 !important; 
+    padding: 28px;
+    text-decoration: none;
+    box-shadow: 0 12px 35px rgba(0,0,0,.04);
+    border: none !important; 
+    transition: .3s;
+    scroll-snap-align: start;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between; 
 }
 
 .verified-card:hover{
