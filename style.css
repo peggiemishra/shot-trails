@@ -179,13 +179,14 @@ body{
 }
 
 /* ===========================
-   SIDEBAR FEATURED TEXT
+   SIDEBAR MOVING TICKER
 =========================== */
 
 .sidebar-featured-text {
-    margin-top: 30px;
+    margin-top: 35px;
     padding-top: 25px;
     border-top: 1px dashed #ececec;
+    overflow: hidden; 
 }
 
 .featured-heading {
@@ -195,19 +196,47 @@ body{
     text-transform: uppercase;
     letter-spacing: 0.5px;
     color: var(--green);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
     line-height: 1.4;
 }
 
-.sidebar-featured-text p {
-    font-size: 13.5px;
-    line-height: 1.7;
-    color: #4a5c51; /* Elegant blended sage text code */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background: transparent;
+    padding: 5px 0;
 }
 
-.sidebar-featured-text strong {
-    color: var(--green);
-    font-weight: 600;
+.ticker {
+    display: flex;
+    white-space: nowrap;
+    padding-left: 100%;
+    animation: tickerLoop 25s linear infinite; 
+}
+
+.ticker:hover {
+    animation-play-state: paused; /* User can pause on hover to read easily */
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-right: 12px;
+    background: #d9e4d7; /* Soft sage green background */
+    color: #1a3327; /* Dark forest green text */
+    font-size: 12.5px;
+    font-weight: 500;
+    border-radius: 50px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,.03);
+}
+
+@keyframes tickerLoop {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-150%, 0, 0);
+    }
 }
 
 /* ===========================
@@ -634,7 +663,7 @@ body{
     
     border-radius: 0px !important; 
 
-    background:#d9e4d7 !important; /* Perfect requested light sage green background */
+    background:#d9e4d7 !important; 
 
     padding:28px;
 
