@@ -3,14 +3,122 @@
     "id": 1,
     "title": "Tea Plantation, India",
     "photo": "https://images.unsplash.com/flagged/photo-1582360694694-1eb3d0947263?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    
     "unsplash": "https://unsplash.com/photos/woman-in-yellow-dress-sitting-on-green-grass-field-during-daytime-aL48FIIQqUE",
-
     "verifiedUses": [
       {
         "site": "Harvard International Review",
         "title": "Soil Degradation and Crippling Debt: The Agrarian Crisis in India",
         "url": "https://hir.harvard.edu/agrarian-crisis-india/"
+      },
+      {
+        "site": "CSIRO Australia",
+        "title": "International Partnership and Collaboration: Quad AI Engage",
+        "url": "https://www.csiro.au/en/work-with-us/International/Quad-AI-Engage"
+      },
+      {
+        "site": "India Today",
+        "title": "Long Weekend Visual Journey: Exploring Tea & Coffee Plantations in Ooty",
+        "url": "https://navbharattimes.indiatimes.com/travel/destinations/long-weekend-trip-plan-15-to-19-august-in-ooty-queen-of-hill-stations-explore-tea-coffee-plantation-here/articleshow/112346837.cms"
+      },
+      {
+        "site": "Skyscanner",
+        "title": "The Best Time to Visit Ooty and Explore Beautiful South India Hills",
+        "url": "https://www.skyscanner.ca/tips-and-inspiration/the-best-time-to-visit-ooty"
+      },
+      {
+        "site": "Skyscanner India",
+        "title": "Comprehensive Travel Advice: Finding the Perfect Time to Visit Ooty",
+        "url": "https://www.skyscanner.co.in/destinations/advice/the-best-time-to-visit-ooty"
+      },
+      {
+        "site": "NDTV Travel",
+        "title": "Toy Train, Tea Gardens, and Cool Weather: Why Summer in Ooty Feels Right",
+        "url": "https://www.ndtv.com/travel/toy-train-tea-gardens-and-cool-weather-why-summer-in-ooty-just-feels-right-11387336"
+      },
+      {
+        "site": "IISD Sustainable SDG",
+        "title": "Strengthening Maternal Health and Well-being for Farmworkers in South Asia",
+        "url": "https://sdg.iisd.org/commentary/generation-2030/strengthening-maternal-health-for-farmworkers-in-south-asia/"
+      },
+      {
+        "site": "IISD Policy Climate",
+        "title": "Global Action: UN COP-26 Events Address Agriculture's Crucial Role in Net-Zero",
+        "url": "https://sdg.iisd.org/news/cop-26-events-address-agricultures-role-in-net-zero/"
+      },
+      {
+        "site": "McGill JHR",
+        "title": "Regional Media Reports and Field Coverage Across Contemporary Asia",
+        "url": "https://jhrmcgill.ssmu.ca/category/newspaper/regions/asia/"
+      },
+      {
+        "site": "Travel + Leisure Asia",
+        "title": "Ultimate Local Travel Guide to Ooty: Lakes, Restaurants, and Viewpoints",
+        "url": "https://www.travelandleisureasia.com/in/destinations/india/places-to-visit-in-ooty-lakes-restaurants-tourist-spots/"
+      },
+      {
+        "site": "Hindustan Times",
+        "title": "Curated Visual Journey: Low Budget Summer Destinations to Explore in India",
+        "url": "https://www.hindustantimes.com/web-stories/low-budget-summer-destinations-in-india-_N3cB162jTkIAA6aIYN2"
+      },
+      {
+        "site": "The Diplomat",
+        "title": "Rural Perspectives: Who Tells the Stories of India's Dynamic Countryside?",
+        "url": "https://thediplomat.com/2020/08/who-tells-the-stories-of-indias-countryside/"
+      },
+      {
+        "site": "Food Tank India",
+        "title": "Sustaining Smallholder Practices: Farmers Forum Dialogues in India",
+        "url": "https://foodtank.com/news/tag/farmers-forum-india/"
+      },
+      {
+        "site": "The Better India",
+        "title": "Homemaker Builds Gorgeous Western Ghats Getaway With Sustainable Cottages",
+        "url": "https://thebetterindia.com/web-stories/homemaker-builds-gorgeous-western-ghats-getaway-with-treehouses-mud-cottages/"
+      },
+      {
+        "site": "Food Tech Biz",
+        "title": "Traceability Standards: Tea Estates Join Eat Right Campus Program",
+        "url": "https://www.foodtechbiz.com/food-safety-and-traceability/tea-estates-join-eat-right-campus-certification-program"
+      },
+      {
+        "site": "ABPLive Tamil",
+        "title": "Visual Story Showcase: Interesting Local Facts on Ooty Tourist Destinations",
+        "url": "https://tamil.abplive.com/web-stories/travel/interesting-facts-on-ooty-tourist-places-176703"
+      },
+      {
+        "site": "Curly Tales",
+        "title": "Travel Recommendations: 5 Reasons Why Ooty Is Known as the Queen of Hills",
+        "url": "https://curlytales.com/web-stories/5-reasons-why-ooty-is-known-as-the-queen-of-hills/"
+      },
+      {
+        "site": "StayVista Stories",
+        "title": "Romance in the Hills: Best Honeymoon Places to Visit in India This Year",
+        "url": "https://www.stayvista.com/blog/best-honeymoon-places-india-summer-2026/"
+      },
+      {
+        "site": "Tripoto Travel",
+        "title": "The Only Backpacker Guide You Will Ever Need for a Perfect Ooty Getaway",
+        "url": "https://www.tripoto.com/tamil-nadu/trips/the-only-guide-you-will-need-for-ooty-5ea18551cdb5c"
+      },
+      {
+        "site": "Agriculture Review",
+        "title": "Regional Crop Success: This Growing District Is Getting Popular for Tea",
+        "url": "https://agriculturereview.com/web-stories/this-district-of-bihar-is-getting-popular-for-tea-production/"
+      },
+      {
+        "site": "Deep Ocean Roastery",
+        "title": "Global Trends: Matcha Latte From a Meditation Drink to a Modern Sensation",
+        "url": "https://deepoceanroastery.com/blogs/learn-more-about-specialty-coffee/matcha-latte-from-meditation-drink-to-global-trend"
+      },
+      {
+        "site": "The Decor Journal",
+        "title": "Eco-Villages in Modern India: Designing Models for Sustainable Living",
+        "url": "https://thedecorjournalindia.com/eco-villages-in-india-sustainable"
+      },
+      {
+        "site": "Active India Holidays",
+        "title": "Southern Trails Exploration: Jungle Trail and Serene Backwaters Package",
+        "url": "https://activeindiaholidays.com/tours/jungle-trail-and-backwaters"
       }
     ]
   }
