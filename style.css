@@ -179,6 +179,38 @@ body{
 }
 
 /* ===========================
+   SIDEBAR FEATURED TEXT
+=========================== */
+
+.sidebar-featured-text {
+    margin-top: 30px;
+    padding-top: 25px;
+    border-top: 1px dashed #ececec;
+}
+
+.featured-heading {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--green);
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.sidebar-featured-text p {
+    font-size: 13.5px;
+    line-height: 1.7;
+    color: #4a5c51; /* Elegant blended sage text code */
+}
+
+.sidebar-featured-text strong {
+    color: var(--green);
+    font-weight: 600;
+}
+
+/* ===========================
    MAIN
 =========================== */
 
@@ -602,8 +634,7 @@ body{
     
     border-radius: 0px !important; 
 
-    /* Updated to the requested beautiful light sage tint (#d9e4d7) */
-    background:#d9e4d7 !important; 
+    background:#d9e4d7 !important; /* Perfect requested light sage green background */
 
     padding:28px;
 
@@ -639,7 +670,6 @@ body{
 
     letter-spacing:1px;
 
-    /* Styled to rich mid-green tone for clean layout text contrast */
     color:#4a6154 !important; 
 
     margin-bottom:14px;
@@ -654,7 +684,6 @@ body{
 
     line-height:1.5;
 
-    /* Crisp dark forest green text for high reading visibility */
     color:#1a3327 !important; 
 
     margin-bottom:auto;
@@ -663,7 +692,6 @@ body{
 
 .verified-link{
 
-    /* Sharp matching green for clear actionable flow */
     color:#1a3327 !important; 
 
     font-weight:600;
