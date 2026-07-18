@@ -333,7 +333,7 @@ body{
 }
 
 /* ===========================
-   PHOTO GALLERY MVP (STRICT HEIGHT OVERRIDES)
+   PHOTO GALLERY MVP (PREMIUM UPGRADES COMPLETE)
 =========================== */
 
 .section-title{
@@ -351,18 +351,32 @@ body{
     margin-bottom:80px;
 }
 
-/* Targetting both potential dynamic HTML structure hooks strictly */
-.photo img,
-.photo-image {
-    width:100% !important;
-    height:380px !important;       /* Clean compact horizontal banner bar limit */
-    object-fit:cover !important;   
-    object-position:center 25% !important; /* Forces layout tracking to keep top highlights in view */
-    display:block !important;
+/* The wrapper canvas container - set to elegant premium off-white */
+.photo {
+    width:100%;
+    display:block;
+    overflow:hidden;
+    background:#faf8f4;
 }
 
+/* Clean Contain Image Flow - Max Height extended to 650px */
+.photo img,
+.photo-image,
+.photo-card img {
+    width:100% !important;
+    height:auto !important;
+    max-height:650px !important;
+    display:block !important;
+    
+    object-fit:contain !important;
+    object-position:center center !important;
+    
+    background:#faf8f4;
+}
+
+/* Premium Content Padding Added for breathing space spacing */
 .photo-content{
-    padding:40px;
+    padding:50px;
 }
 
 .photo-content h2{
@@ -464,11 +478,17 @@ body{
 
 @media(max-width:1000px){
     .photo img,
-    .photo-image {
-        height:240px !important; /* Smooth override boundary constraint for mobile banners */
+    .photo-image,
+    .photo-card img {
+        max-height:420px !important;
+        height:auto !important;
     }
-    .photo-content{ padding:25px; }
-    .photo-content h2{ font-size:34px; }
+    .photo-content{
+        padding:30px;
+    }
+    .photo-content h2{
+        font-size:34px;
+    }
     .verified-card{
         min-width:260px !important;
         width:260px !important;
