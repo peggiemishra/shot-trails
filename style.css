@@ -1,5 +1,5 @@
 /* ==========================================================
-    RESET & BASE (🔥 EDITORIAL LUXURY COMBINATION)
+    RESET & BASE (🔥 HIGH-CONTRAST PREMIUM EDITORIAL COMBINATION)
 ========================================================== */
 *{
     margin:0;
@@ -15,13 +15,13 @@ body{
     font-family:'Inter',sans-serif;
     color:#1d1d1d;
     
-    /* Dynamic Base Body Texture: Warm Beige Backdrop */
-    background-color: #f8f3eb;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.025'/%3E%3C/svg%3E");
+    /* 🔥 Changed Base Body to Pearl Minimal White for Luxury Pop */
+    background-color: #faf9f6;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.02'/%3E%3C/svg%3E");
 }
 
 :root{
-    --bg:#f8f3eb;
+    --bg:#faf9f6;
     --white:#ffffff;
     --green:#295943;
     --gold:#d4b46a;
@@ -39,19 +39,21 @@ body{
 }
 
 /* ==========================================================
-    🔥 SIDEBAR: WARM IVORY (LAID OVER TEXTURED BACKGROUND)
+    🔥 SIDEBAR: MUTED LUXURY IVORY-SAGE CONTRAST PANEL
 ========================================================== */
 .sidebar{
-    background-color: #f7f4ee !important; /* Premium Warm Ivory Panel Layer */
+    /* 🔥 Sidebar background changed to a clearly visible soft aesthetic tone */
+    background-color: #f2ede4 !important; 
     padding:45px 35px;
     
-    /* Elegant Clean Separation Border */
-    border-right: 1px solid rgba(80, 70, 55, 0.08) !important;
+    /* Clean Solid Separator Line */
+    border-right: 1px solid rgba(41, 89, 67, 0.12) !important;
     position:sticky;
     top:0;
     height:100vh;
     overflow:auto;
-    box-shadow: inset -10px 0 20px rgba(0, 0, 0, 0.005); /* Subtle radial edge shadow depth */
+    /* Subtle inner shadow to give it an elegant depth */
+    box-shadow: inset -8px 0 15px rgba(0, 0, 0, 0.02); 
 }
 
 .logo{
@@ -102,11 +104,11 @@ body{
 }
 
 .stat{
-    background:#fafafa;
+    background:#ffffff; /* White stats cards to contrast against the ivory panel */
     padding:18px;
     border-radius:18px;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,.05);
+    box-shadow:0 4px 12px rgba(0,0,0,.03);
 }
 
 .stat h2{
@@ -125,7 +127,7 @@ body{
 .sidebar-featured-text {
     margin-top: 35px;
     padding-top: 25px;
-    border-top: 1px dashed #ececec;
+    border-top: 1px dashed rgba(41, 89, 67, 0.2);
     overflow: hidden !important; 
     width: 100% !important;
 }
@@ -305,14 +307,15 @@ body{
 .gallery{ margin-top:80px; min-height:400px; }
 .section-title{ font-family:'Cormorant Garamond',serif; font-size:48px; color:var(--green); margin-bottom:40px; }
 
-/* Dynamic Card Wrappers */
+/* Crisp White Cards to sit cleanly on Pearl White base background */
 .photo-card{
-    background: var(--white) !important; /* Premium Crisp White Display Cards */
+    background: #ffffff !important; 
     border-radius:30px;
     overflow:hidden;
-    box-shadow:0 20px 50px rgba(0,0,0,.05);
+    box-shadow:0 15px 40px rgba(0,0,0,.04);
     margin-bottom:80px;
     width: 100%;
+    border: 1px solid rgba(0,0,0,0.02);
 }
 
 .photo-image{
@@ -354,7 +357,6 @@ body{
 
 .verified-carousel::-webkit-scrollbar{ display: none !important; width: 0 !important; height: 0 !important; }
 
-/* Slider Content Elements */
 .verified-card{
     flex: 0 0 280px !important; 
     width: 280px !important;
@@ -426,7 +428,7 @@ body{
         position:relative; 
         height:auto; 
         border-right:none !important; 
-        border-bottom:1px solid rgba(80, 70, 55, 0.08) !important; 
+        border-bottom:1px solid rgba(41, 89, 67, 0.12) !important; 
         box-shadow: none !important;
     }
     
