@@ -1,7 +1,6 @@
-/* ===========================
-    RESET
-=========================== */
-
+/* ==========================================================
+    RESET & BASE (🔥 PREMIUM GRAINY TEXTURE INTEGRATED)
+========================================================== */
 *{
     margin:0;
     padding:0;
@@ -14,14 +13,15 @@ html{
 
 body{
     font-family:'Inter',sans-serif;
-    background:#f8f3eb;
     color:#1d1d1d;
+    /* Premium Matte Grainy Texture Applied Directly */
+    background-color: #f7f3eb;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
 }
 
 /* ===========================
     VARIABLES
 =========================== */
-
 :root{
     --bg:#f8f3eb;
     --white:#ffffff;
@@ -34,7 +34,6 @@ body{
 /* ===========================
     LAYOUT
 =========================== */
-
 .layout{
     display:grid;
     grid-template-columns:320px 1fr;
@@ -44,11 +43,10 @@ body{
 /* ===========================
     SIDEBAR
 =========================== */
-
 .sidebar{
-    background:#fcfaf6; 
+    background: transparent; /* Seamless blend with textured paper background */
     padding:45px 35px;
-    border-right:1px solid #ececec;
+    border-right:1px solid rgba(0,0,0,0.05);
     position:sticky;
     top:0;
     height:100vh;
@@ -95,7 +93,6 @@ body{
 /* ===========================
     STATS
 =========================== */
-
 .sidebar-stats{
     margin-top:45px;
     display:grid;
@@ -124,7 +121,6 @@ body{
 /* ===========================
     SIDEBAR MOVING TICKER
 =========================== */
-
 .sidebar-featured-text {
     margin-top: 35px;
     padding-top: 25px;
@@ -191,9 +187,8 @@ body{
 }
 
 /* ===========================
-    MAIN
+    MAIN CONTENT
 =========================== */
-
 .main-content{
     padding:45px 70px;
     overflow: hidden; 
@@ -202,7 +197,6 @@ body{
 /* ===========================
     NAVBAR
 =========================== */
-
 .navbar{
     display:flex;
     justify-content:space-between;
@@ -228,7 +222,6 @@ body{
 /* ===========================
     HERO
 =========================== */
-
 .hero{
     display:grid;
     grid-template-columns:1fr 420px;
@@ -272,7 +265,6 @@ body{
 /* ===========================
     PERSONAL INTRO
 =========================== */
-
 .personal-intro {
     margin-top: 100px;
     margin-bottom: 80px;
@@ -315,16 +307,14 @@ body{
 /* ===========================
     EMPTY SECTIONS
 =========================== */
-
 .gallery{
     margin-top:80px;
     min-height:400px;
 }
 
 /* ===========================
-    PHOTO GALLERY MVP
+    PHOTO GALLERY & CARDS
 =========================== */
-
 .section-title{
     font-family:'Cormorant Garamond',serif;
     font-size:48px;
@@ -401,7 +391,7 @@ body{
     height: 0 !important;
 }
 
-/* 🔥 FIXED: Desktop area card framework using flexible min-height instead of fixed height */
+/* 🔥 FIXED: Desktop area card layout framework using min-height instead of fixed pixel heights */
 .verified-card{
     flex: 0 0 280px !important; 
     width: 280px !important;
@@ -449,9 +439,9 @@ body{
     margin-top:20px;
 }
 
-/* ==========================================
-   🔥 FIXED & ELEGANT CENTERED FOOTER SECTION
-========================================== */
+/* ==========================================================
+   🔥 FIXED & ELEGANT CENTERED SIGN-OFF FOOTER (CARD OUTSIDE)
+========================================================== */
 .photography-footer {
     margin-top: 100px;
     padding-top: 50px;
@@ -465,7 +455,7 @@ body{
     justify-content: center;
 }
 
-/* First line - Big and refined green branding text */
+/* First line - Bold green signature text */
 .footer-journey-text {
     font-family: 'Inter', sans-serif;
     font-size: 20px; 
@@ -475,7 +465,7 @@ body{
     letter-spacing: 0.3px;
 }
 
-/* Clickable Unsplash link wrapper */
+/* Unsplash Green Highlight Anchor styling */
 .unsplash-green-link {
     color: var(--green) !important;
     text-decoration: none;
@@ -490,7 +480,7 @@ body{
     border-bottom-color: transparent;
 }
 
-/* Second line - Smaller, elegant italics */
+/* Second line - Small classic serif italic layout */
 .footer-signoff {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
@@ -500,10 +490,9 @@ body{
     letter-spacing: 0.5px;
 }
 
-/* ===========================
-    RESPONSIVE MEDIA QUERIES (1000px and below)
-=========================== */
-
+/* ==========================================================
+    RESPONSIVE MEDIA QUERIES & MOBILE OVERFLOW PATCHES
+========================================================== */
 @media(max-width:1000px){
 
     .layout{
@@ -570,7 +559,7 @@ body{
         font-size:34px;
     }
 
-    /* 🔥 FIXED: Mobile view card parameters preventing Check Out text layout overflow */
+    /* 🔥 MOBILE FIX: Scaled layout boundaries preventing text block cards overflow breaks */
     .verified-card{
         flex: 0 0 240px !important; 
         width: 240px !important;
@@ -591,7 +580,7 @@ body{
         margin-top: auto !important; 
     }
 
-    /* Footer mobile adjustments */
+    /* Mobile footer compression */
     .photography-footer {
         margin-top: 60px;
         padding-top: 35px;
