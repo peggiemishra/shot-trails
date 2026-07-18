@@ -543,7 +543,7 @@ body{
 }
 
 /* ===========================
-   PHOTO GALLERY MVP (FIXED CROPPING)
+   PHOTO GALLERY MVP (UPDATED MAX RESTRAINTS)
 =========================== */
 
 .section-title{
@@ -571,10 +571,9 @@ body{
 
 .photo-image{
     width:100%;
-    aspect-ratio:16/10; /* Fixed aspect framing for landscape images */
-    height:auto;        /* Removed hardcoded fixed height */
+    height:380px;       /* Controlled compact height so it looks tight and neat */
     object-fit:cover;   
-    object-position:center 30%; /* Focus point centered towards top elements */
+    object-position:center 20%; /* Pushes focus up slightly so flower and book page alignment is clean */
     display:block;
 }
 
@@ -746,7 +745,7 @@ body{
 
     .photo-image{
 
-        height:auto; /* Respects aspect ratio layout safely */
+        height:240px; /* Slim view slice for small dynamic viewport screens */
 
     }
 
