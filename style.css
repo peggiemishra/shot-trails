@@ -1,5 +1,5 @@
 /* ===========================
-   RESET
+    RESET
 =========================== */
 
 *{
@@ -19,7 +19,7 @@ body{
 }
 
 /* ===========================
-   VARIABLES
+    VARIABLES
 =========================== */
 
 :root{
@@ -32,7 +32,7 @@ body{
 }
 
 /* ===========================
-   LAYOUT
+    LAYOUT
 =========================== */
 
 .layout{
@@ -42,7 +42,7 @@ body{
 }
 
 /* ===========================
-   SIDEBAR
+    SIDEBAR
 =========================== */
 
 .sidebar{
@@ -93,7 +93,7 @@ body{
 }
 
 /* ===========================
-   STATS
+    STATS
 =========================== */
 
 .sidebar-stats{
@@ -122,7 +122,7 @@ body{
 }
 
 /* ===========================
-   SIDEBAR MOVING TICKER
+    SIDEBAR MOVING TICKER
 =========================== */
 
 .sidebar-featured-text {
@@ -191,7 +191,7 @@ body{
 }
 
 /* ===========================
-   MAIN
+    MAIN
 =========================== */
 
 .main-content{
@@ -200,7 +200,7 @@ body{
 }
 
 /* ===========================
-   NAVBAR
+    NAVBAR
 =========================== */
 
 .navbar{
@@ -226,7 +226,7 @@ body{
 }
 
 /* ===========================
-   HERO
+    HERO
 =========================== */
 
 .hero{
@@ -270,7 +270,7 @@ body{
 }
 
 /* ===========================
-   PERSONAL INTRO
+    PERSONAL INTRO
 =========================== */
 
 .personal-intro {
@@ -313,7 +313,7 @@ body{
 }
 
 /* ===========================
-   EMPTY SECTIONS
+    EMPTY SECTIONS
 =========================== */
 
 .gallery{
@@ -322,7 +322,7 @@ body{
 }
 
 /* ===========================
-   PHOTO GALLERY MVP
+    PHOTO GALLERY MVP
 =========================== */
 
 .section-title{
@@ -383,7 +383,7 @@ body{
 
 .verified-carousel{
     display: flex !important;
-    flex-wrap: nowrap !important; /* Forces row setup */
+    flex-wrap: nowrap !important;
     gap: 20px;
     overflow-x: auto !important;  
     overflow-y: hidden !important;
@@ -391,11 +391,10 @@ body{
     scroll-behavior: smooth;
     padding-bottom: 15px;
     -webkit-overflow-scrolling: touch; 
-    scrollbar-width: none; /* Firefox se scrollbar hatane ke liye */
-    -ms-overflow-style: none; /* IE/Edge se scrollbar hatane ke liye */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
-/* 🔥 FIXED: Chrome, Safari aur modern browsers se scrollbar gayab karne ke liye */
 .verified-carousel::-webkit-scrollbar{
     display: none !important;
     width: 0 !important;
@@ -403,7 +402,7 @@ body{
 }
 
 .verified-card{
-    flex: 0 0 280px !important; /* Sizing rigid block layout */
+    flex: 0 0 280px !important; 
     width: 280px !important;
     min-width: 280px !important; 
     max-width: 280px !important;
@@ -450,7 +449,46 @@ body{
 }
 
 /* ===========================
-   RESPONSIVE MEDIA QUERIES (1000px and below)
+    🔥 DYNAMIC FOOTER SIGN-OFF
+=========================== */
+.photography-footer {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    text-align: center;
+    border-top: 1px dashed #ececec;
+    width: 100%;
+}
+
+.footer-journey-text {
+    font-size: 18px;
+    color: var(--gray);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.unsplash-green-link {
+    color: var(--green) !important;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.3s;
+    border-bottom: 2px solid transparent;
+}
+
+.unsplash-green-link:hover {
+    border-bottom: 2px solid var(--green);
+}
+
+.footer-signoff {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 24px;
+    color: var(--text);
+    margin-top: 12px;
+}
+
+/* ===========================
+    RESPONSIVE MEDIA QUERIES (1000px and below)
 =========================== */
 
 @media(max-width:1000px){
@@ -525,5 +563,10 @@ body{
         min-width:230px !important;
         max-width:230px !important;
         height:250px !important;
+    }
+
+    .photography-footer {
+        margin-top: 60px;
+        padding-top: 35px;
     }
 }
