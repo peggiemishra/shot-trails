@@ -1,5 +1,5 @@
 /* ==========================================================
-    RESET & BASE (PREMIUM MATTE GRAINY TEXTURE)
+    RESET & BASE (🔥 PREMIUM MATTE GRAINY TEXTURE INTEGRATED)
 ========================================================== */
 *{
     margin:0;
@@ -14,10 +14,14 @@ html{
 body{
     font-family:'Inter',sans-serif;
     color:#1d1d1d;
+    /* Premium Matte Grainy Texture Applied Directly */
     background-color: #f7f3eb;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
 }
 
+/* ===========================
+    VARIABLES
+=========================== */
 :root{
     --bg:#f8f3eb;
     --white:#ffffff;
@@ -40,7 +44,7 @@ body{
     SIDEBAR & PROFILE IMAGE FIX
 =========================== */
 .sidebar{
-    background: transparent;
+    background: transparent; /* Seamless blend with textured background */
     padding:45px 35px;
     border-right:1px solid rgba(0,0,0,0.05);
     position:sticky;
@@ -56,7 +60,6 @@ body{
     margin-bottom:30px;
 }
 
-/* 🔥 FIXED: Isne green dress avatar ko bade block se hata kar wapas perfect circle banaya */
 .profile-image{
     width:180px !important;
     height:180px !important;
@@ -244,7 +247,6 @@ body{
     margin-bottom:40px;
 }
 
-/* 🔥 FIXED: Isne main black top flower photo ko control karke cleanly grid me fit kiya */
 .hero-right img{
     width: 100% !important;
     max-width: 420px !important;
@@ -350,7 +352,7 @@ body{
 
 .verified-carousel::-webkit-scrollbar{ display: none !important; width: 0 !important; height: 0 !important; }
 
-/* Carousel elements slider items */
+/* Desktop Carousel Cards Grid Layout Framework */
 .verified-card{
     flex: 0 0 280px !important; 
     width: 280px !important;
@@ -413,12 +415,12 @@ body{
 .footer-signoff { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 18px; color: #555; margin-top: 5px; letter-spacing: 0.5px; }
 
 /* ==========================================================
-    MOBILE & RESPONSIVE CONSTRAINTS PATCHES
+    🔥 RESPONSIVE MOBILE FIXES & TIGHT COMPACT CARD LAYOUT
 ========================================================== */
 @media(max-width:1000px){
     .layout{ grid-template-columns:1fr; }
     .sidebar{ position:relative; height:auto; border-right:none; border-bottom:1px solid #eee; }
-    .main-content{ padding:40px; }
+    .main-content{ padding:40px 20px; } 
     .hero{ grid-template-columns:1fr; text-align:center; gap: 40px; }
     .hero p{ margin:auto; margin-bottom:35px; }
     .hero-right{ margin-top:20px; display: flex; justify-content: center; }
@@ -432,16 +434,33 @@ body{
     .photo-content{ padding:25px; }
     .photo-content h2{ font-size:34px; }
 
+    /* 🔥 FIXED: Mobile view card height compression to remove ugly hollow gaps */
     .verified-card{
         flex: 0 0 240px !important; 
         width: 240px !important;
         min-width: 240px !important;
         max-width: 240px !important;
-        min-height: 260px !important; 
-        padding: 20px;
+        min-height: 190px !important; /* Fixed tight layout height boundary */
+        padding: 20px 18px;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: flex-start; 
     }
-    .verified-title { font-size: 15px !important; line-height: 1.4 !important; margin-bottom: 15px !important; }
-    .verified-link { font-size: 14px !important; margin-top: auto !important; }
+    
+    .verified-site {
+        margin-bottom: 8px !important;
+    }
+
+    .verified-title { 
+        font-size: 15px !important; 
+        line-height: 1.4 !important; 
+        margin-bottom: 12px !important; 
+    }
+    
+    .verified-link { 
+        font-size: 14px !important; 
+        margin-top: auto !important; /* Checkout will cleanly anchor at the exact bottom */
+    }
 
     .photography-footer { margin-top: 60px; padding-top: 35px; padding-bottom: 45px; }
     .footer-journey-text { font-size: 17px; }
