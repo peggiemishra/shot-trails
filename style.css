@@ -401,15 +401,16 @@ body{
     height: 0 !important;
 }
 
+/* 🔥 FIXED: Desktop area card framework using flexible min-height instead of fixed height */
 .verified-card{
     flex: 0 0 280px !important; 
     width: 280px !important;
     min-width: 280px !important; 
     max-width: 280px !important;
-    height: 280px !important;
+    min-height: 280px !important; 
     border-radius: 12px !important; 
     background: #d9e4d7 !important; 
-    padding: 28px;
+    padding: 24px; 
     text-decoration: none;
     box-shadow: 0 12px 35px rgba(0,0,0,.04);
     border: none !important; 
@@ -448,9 +449,9 @@ body{
     margin-top:20px;
 }
 
-/* ===========================
-    🔥 DYNAMIC FOOTER SIGN-OFF
-=========================== */
+/* ==========================================
+   🔥 FIXED & ELEGANT CENTERED FOOTER SECTION
+========================================== */
 .photography-footer {
     margin-top: 100px;
     padding-top: 50px;
@@ -458,33 +459,45 @@ body{
     text-align: center;
     border-top: 1px dashed #ececec;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
+/* First line - Big and refined green branding text */
 .footer-journey-text {
-    font-size: 18px;
-    color: var(--gray);
-    margin-bottom: 15px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px; 
+    color: var(--green); 
     font-weight: 500;
+    margin-bottom: 14px; 
+    letter-spacing: 0.3px;
 }
 
+/* Clickable Unsplash link wrapper */
 .unsplash-green-link {
     color: var(--green) !important;
     text-decoration: none;
     font-weight: 700;
-    transition: 0.3s;
-    border-bottom: 2px solid transparent;
+    border-bottom: 2px solid var(--green); 
+    transition: 0.3s ease;
+    padding-bottom: 2px;
 }
 
 .unsplash-green-link:hover {
-    border-bottom: 2px solid var(--green);
+    opacity: 0.8;
+    border-bottom-color: transparent;
 }
 
+/* Second line - Smaller, elegant italics */
 .footer-signoff {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: 24px;
-    color: var(--text);
-    margin-top: 12px;
+    font-size: 18px; 
+    color: #555; 
+    margin-top: 5px;
+    letter-spacing: 0.5px;
 }
 
 /* ===========================
@@ -557,16 +570,37 @@ body{
         font-size:34px;
     }
 
+    /* 🔥 FIXED: Mobile view card parameters preventing Check Out text layout overflow */
     .verified-card{
-        flex:0 0 230px !important; 
-        width:230px !important;
-        min-width:230px !important;
-        max-width:230px !important;
-        height:250px !important;
+        flex: 0 0 240px !important; 
+        width: 240px !important;
+        min-width: 240px !important;
+        max-width: 240px !important;
+        min-height: 260px !important; 
+        padding: 20px;
     }
 
+    .verified-title {
+        font-size: 15px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 15px !important;
+    }
+    
+    .verified-link {
+        font-size: 14px !important;
+        margin-top: auto !important; 
+    }
+
+    /* Footer mobile adjustments */
     .photography-footer {
         margin-top: 60px;
         padding-top: 35px;
+        padding-bottom: 45px;
+    }
+    .footer-journey-text {
+        font-size: 17px;
+    }
+    .footer-signoff {
+        font-size: 16px;
     }
 }
