@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Tea Plantation,Ooty,India",
+    "title": "Tea Plantation, India",
     "photo": "https://images.unsplash.com/flagged/photo-1582360694694-1eb3d0947263?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "unsplash": "https://unsplash.com/photos/woman-in-yellow-dress-sitting-on-green-grass-field-during-daytime-aL48FIIQqUE",
     "verifiedUses": [
@@ -63,7 +63,7 @@
       {
         "site": "The Diplomat",
         "title": "Rural Perspectives: Who Tells the Stories of India's Dynamic Countryside?",
-        "url": "https://thediplomat.com/2020/08/who-tells-the-stories-of-indias-countryside/"
+        "url": "https://thediplomat.com/2020/08/who-tells the-stories-of-indias-countryside/"
       },
       {
         "site": "Food Tank India",
@@ -125,7 +125,7 @@
   {
     "id": 2,
     "title": "Mustard Flower on a Book",
-    "photo": "https://images.unsplash.com/photo-1597833990493-2a9f8de8bdc8?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "photo": "https://images.unsplash.com/photo-1597843796381-492353f42165?q=80&w=2070&auto=format&fit=crop",
     "unsplash": "https://unsplash.com/photos/yellow-flower-on-book-page-Vd0mYPEFC80",
     "verifiedUses": [
       {
