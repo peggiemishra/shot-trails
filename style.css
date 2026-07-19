@@ -316,6 +316,16 @@ body{
     margin-bottom:80px;
     width:100%;
     border:1px solid rgba(0,0,0,.02);
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease;
+    will-change: transform;
+}
+
+.photo-card:hover{
+    transform:translateY(-6px);   /* -8px se thoda subtle */
+    box-shadow:0 22px 55px rgba(0,0,0,.08);
 }
 
 .photo-image{
