@@ -30,14 +30,14 @@ fetch("data.json")
     });
     
     // --- COUNTER ANIMATION ---
-    const counters = document.querySelectorAll('.stat h2');
+    const counters = document.querySelectorAll('.counter');
     const observerOptions = { threshold: 0.5 };
 
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           const counter = entry.target;
-          const target = parseInt(counter.innerText.replace(/\D/g, ''));
+          const target = Number(counter.dataset.target);
           const updateCount = () => {
             const current = parseInt(counter.innerText.replace(/\D/g, ''));
             const increment = target / 50;
