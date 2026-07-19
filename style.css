@@ -488,27 +488,33 @@ body{
    HERO TITLE REVEAL
 =========================== */
 
-.hero-title span{
-    display:block;
-    opacity:0;
-    transform:translateY(25px);
-    animation:lineReveal .8s ease forwards;
-}
-
-.hero-title span:nth-child(2){
-    animation-delay:.25s;
-}
-
 .hero-title{
     overflow:hidden;
 }
 
+.hero-title span{
+    display:block;
+    opacity:0;
+    transform:translateY(40px);
+    animation:lineReveal 1.8s cubic-bezier(.22,1,.36,1) forwards;
+    will-change:transform,opacity;
+}
+
+.hero-title span:nth-child(2){
+    animation-delay:.8s;
+}
+
 @keyframes lineReveal{
-    from{
+    0%{
         opacity:0;
-        transform:translateY(25px);
+        transform:translateY(40px);
     }
-    to{
+
+    60%{
+        opacity:.5;
+    }
+
+    100%{
         opacity:1;
         transform:translateY(0);
     }
