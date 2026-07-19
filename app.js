@@ -28,32 +28,52 @@ fetch("data.json")
         </div>
       `;
     });
-    
-    // --- COUNTER ANIMATION ---
-    const counters = document.querySelectorAll('.counter');
-    const observerOptions = { threshold: 0.5 };
+    // ---------- Counter Animation ----------
+const counters = document.querySelectorAll(".counter");
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const counter = entry.target;
-          const target = Number(counter.dataset.target);
-          const updateCount = () => {
-            const current = parseInt(counter.innerText.replace(/\D/g, ''));
-            const increment = target / 50;
-            if (current < target) {
-              counter.innerText = Math.ceil(current + increment) + '+';
-              setTimeout(updateCount, 30);
-            } else {
-              counter.innerText = target.toLocaleString() + '+';
-            }
-          };
-          updateCount();
-          observer.unobserve(counter);
-        }
-      });
-    }, observerOptions);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
 
-    counters.forEach(c => observer.observe(c));
-  })
-  .catch(error => console.error("Error loading data.json:", error));
+    const counter = entry.target;
+    const target = Number(counter.dataset.target);
+
+    let current = 0;
+    const step = target / 80;
+
+    function update() {
+      current += step;
+
+      if (current >= target) {
+        current = target;
+      }
+
+      if (target >= 1000000) {
+        counter.textContent =
+          (current / 1000000).toFixed(1).replace(".0", "") + "M+";
+      } else if (target >= 1000) {
+        counter.textContent =
+          Math.floor(current / 1000) + "K+";
+      } else {
+        counter.textContent =
+          Math.floor(current) + "+";
+      }
+
+      if (current < target) {
+        requestAnimationFrame(update);
+      }
+    }
+
+    update();
+    observer.unobserve(counter);
+  });
+}, {
+  threshold: 0.5
+});
+
+counters.forEach(counter => observer.observe(counter));
+
+})
+.catch(error => {
+    console.error("Error loading data.json:", error);
+});
