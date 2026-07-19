@@ -11,9 +11,6 @@ body{
     overflow-x: hidden;
 }
 
-/* ===========================
-    LAYOUT (GRID LOCK)
-=========================== */
 .layout {
     display: grid;
     grid-template-columns: 320px 1fr;
@@ -22,20 +19,21 @@ body{
 }
 
 /* ===========================
-    SIDEBAR
+    SIDEBAR (FIXED NAVY)
 =========================== */
 .sidebar {
-    background-color: #f0eae1 !important;
+    background-color: #2D4C63 !important;
+    color: #ffffff !important;
     padding: 40px;
     height: 100vh;
     position: sticky;
     top: 0;
     overflow-y: auto;
-    border-right: 1px solid rgba(41, 89, 67, 0.12);
+    flex-shrink: 0;
 }
 
 .logo, .sidebar h3, .role, .bio, .sidebar-stats .stat h2, .sidebar-stats .stat span, .featured-heading, .ticker-item {
-    color: #1b3b2b !important;
+    color: #ffffff !important;
 }
 
 .profile-image{
@@ -45,36 +43,36 @@ body{
     object-fit:cover !important;
     display:block !important;
     margin:0 auto 25px auto !important;
+    border: 3px solid #ffffff;
 }
 
-.stat{ background: #ffffff !important; padding:15px; border-radius:15px; text-align:center; margin-top:10px; box-shadow:0 4px 15px rgba(0,0,0,0.04); }
+.stat{ background: rgba(255,255,255,0.1) !important; padding:15px; border-radius:15px; text-align:center; margin-top:10px; }
 
 /* ===========================
-    MAIN AREA
+    MAIN AREA (FIXED)
 =========================== */
 .main-content {
     padding: 60px;
-    background-color: #faf9f5;
+    background-color: #A29E9A;
     min-width: 0;
 }
 
-/* 🔥 UPDATED: Photo Card Background */
+/* 🔥 FIXED: Corrected HEX and Overflow */
 .photo-card {
-    background: #ff1e6 !important; 
+    background: #FFF1E6 !important;
     border-radius: 30px;
+    overflow: hidden;             /* Corners fixed */
     padding: 40px;
     margin-bottom: 60px;
     width: 100%;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1) !important;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05); /* Premium shadow */
 }
 
 .photo-image{ width:100%; height:450px; object-fit:cover; border-radius: 20px; display:block; }
 .photo-content { padding-top: 30px; }
-.photo-content h2 { color: #1b3b2b !important; font-family:'Cormorant Garamond',serif; font-size:40px; }
+.photo-content h2 { color: #2A2A2A !important; font-family:'Cormorant Garamond',serif; font-size:40px; }
 
-/* ===========================
-    CAROUSEL
-=========================== */
+/* Carousel */
 .verified-carousel {
     display: flex;
     gap: 20px;
@@ -84,22 +82,20 @@ body{
 
 .verified-card {
     flex: 0 0 280px;
-    background: #d9e4d7 !important;
+    background: #E8D5CD !important;
     padding: 20px;
     border-radius: 15px;
-    color: #1a3327 !important;
+    color: #2A2A2A !important;
 }
 
-.verified-title, .verified-link, .verified-site { color: #1a3327 !important; }
+.verified-title, .verified-link, .verified-site { color: #2A2A2A !important; }
 
-/* ===========================
-    FOOTER & RESPONSIVE
-=========================== */
-.photography-footer { padding: 40px; text-align: center; color: #1b3b2b; }
+/* Footer */
+.photography-footer { padding: 40px; text-align: center; color: #ffffff; }
 
 @media(max-width:1000px){
     .layout{ grid-template-columns:1fr; }
-    .sidebar{ position:relative; height:auto; border-right:none; border-bottom:1px solid #eee; }
+    .sidebar{ position:relative; height:auto; }
     .main-content{ padding:20px; }
     .photo-card{ padding: 20px; }
 }
